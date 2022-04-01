@@ -1,0 +1,23 @@
+.lmenu{
+    user-select:none;
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: fit-content;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.lmenuel{
+    background-color: white;
+    width:inherit;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.lmenuel:hover{
+    background-color: #f6f6f6;
+}

@@ -2,8 +2,8 @@
     border-radius: 7px;
     overflow-x: hidden;
     width: 350px;
-    height: 380px;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+    height: 360px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
     background-color: aliceblue;
     margin: 15px;
   }
@@ -14,10 +14,10 @@
     margin-left: 10px;
     border-collapse: collapse;
   }
-  .good-container>table>tr{
+  .good-container>table>tbody>tr{
     border: 1px solid white ;
   }
-  .good-container>table>tr>td{
+  .good-container>table>tbody>tr>td{
     border: 5px solid white ;
   }
   .good-container>img{
@@ -33,15 +33,16 @@
   }
   .embla {
     position: relative;
-    background-color: #f7f7f7;
-    padding: 20px;
+    background-color: white;
+    padding: 15px;
     max-width: 670px;
-    margin: 20px;
+    margin: 10px;
   }
   
   .embla__viewport {
     overflow: hidden;
     width: 100%;
+    background-color: white;
   }
   
   .embla__viewport.is-draggable {
@@ -59,12 +60,10 @@
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    margin-left: -10px;
   }
   
   .embla__slide {
     position: relative;
     min-width: 350px;
-    padding-left: 10px;
   }
   

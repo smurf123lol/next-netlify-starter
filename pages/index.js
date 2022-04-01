@@ -3,7 +3,8 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Good from '@components/Good'
 import GoodCarousel from '@components/GoodCarousel'
-import useEmblaCarousel from 'embla-carousel-react'
+import LMenu from '@components/LMenu'
+
 const props = 
 [[
   {name:"Номер процессора",value:"i5-10400F"},
@@ -63,18 +64,35 @@ const Home=()=>{
       </Head>
       <main>
         <Header title="Товары" />
-        <GoodCarousel>
-          <Good img='/good1.jpg' props ={props[0]}/>
-          <Good img='/good2.jpg' props ={props[1]}/>
-          <Good img='/good3.jpg' props ={props[2]}/>
-          <Good img='/good4.png' props ={props[3]}/>
-          <Good img='/good5.jpg' props ={props[4]}/>
-          <Good img='/good6.jpg' props ={props[5]}/>
-          <Good img='/good7.jpg' props ={props[6]}/>
-        </GoodCarousel>
-        <p className="description">
-          <code>дальше делать лень </code>
-        </p>
+        <LMenu />
+        <div className='thin-scroll-bar' style={{
+          "gridArea":"c",
+          "overflowY":"scroll"
+      }}>
+          <Header title="Витрина 1" />
+          <GoodCarousel>
+            <Good img='/good1.jpg' props ={props[0]}/>
+            <Good img='/good2.jpg' props ={props[1]}/>
+            <Good img='/good3.jpg' props ={props[2]}/>
+            <Good img='/good4.png' props ={props[3]}/>
+            <Good img='/good5.jpg' props ={props[4]}/>
+            <Good img='/good6.jpg' props ={props[5]}/>
+            <Good img='/good7.jpg' props ={props[6]}/>
+          </GoodCarousel>
+          <Header title="Витрина 2" />
+          <GoodCarousel>
+            <Good img='/good7.jpg' props ={props[0]}/>
+            <Good img='/good6.jpg' props ={props[1]}/>
+            <Good img='/good5.jpg' props ={props[2]}/>
+            <Good img='/good4.png' props ={props[3]}/>
+            <Good img='/good3.jpg' props ={props[4]}/>
+            <Good img='/good2.jpg' props ={props[5]}/>
+            <Good img='/good1.jpg' props ={props[6]}/>
+          </GoodCarousel>
+          <p className="description">
+            <code>дальше делать лень</code>
+          </p>
+        </div>
       </main>
         
       <Footer/>
