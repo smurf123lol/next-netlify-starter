@@ -4,7 +4,6 @@ import Footer from '@components/Footer'
 import Good from '@components/Good'
 import GoodCarousel from '@components/GoodCarousel'
 import LMenu from '@components/LMenu'
-
 const props = 
 [[
   {name:"Номер процессора",value:"i5-10400F"},
