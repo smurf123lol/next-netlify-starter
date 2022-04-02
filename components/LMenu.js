@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./css/Lmenu.module.css"
+import styles from "./Lmenu.module.css"
 export default class LMenu extends React.Component{
     constructor(){
         super();
