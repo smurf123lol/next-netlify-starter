@@ -77,4 +77,8 @@ header{
 .header-el:hover{
   z-index: 1;
   background-color: rgb(30,30,30);
+  user-select: none;
+}
+.header-el:active{
+  background-color: rgb(27,27,27);
 }

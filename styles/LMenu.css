@@ -21,3 +21,6 @@
 .lmenuel:hover{
     background-color: #f6f6f6;
 }
+.lmenuel:active{
+    background-color: #f0f0f0;
+}
