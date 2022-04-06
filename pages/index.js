@@ -61,13 +61,24 @@ const Home=()=>{
         <title>CvR!</title>
         <link rel="icon" href="/text-logo.ico" />
       </Head>
+      <header>
+        <div className='header-el'>Заказы</div>
+        <div className='header-el'>Тех. поддержка</div>
+        <div className='header-el'>Оплата</div>
+        <div className='header-el'>О нас</div>
+        <div className='header-right'>
+          <div className='header-el'>Контакты</div>
+          <div className='header-el'>Соц. Сети</div>
+        </div>
+      </header>
       <main>
         <Header title="Товары" />
         <LMenu />
-        <div className='thin-scroll-bar' style={{
-          "gridArea":"c",
-          "overflowY":"scroll"
-      }}>
+        <div className='thin-scroll-bar base-container' style={{
+          gridArea:"c",
+          overflowY:"scroll",
+          marginLeft:"50px"
+      }}><div style={{"gridArea":"a"}}>
           <Header title="Витрина 1" />
           <GoodCarousel>
             <Good img='/good1.jpg' props ={props[0]}/>
@@ -78,6 +89,7 @@ const Home=()=>{
             <Good img='/good6.jpg' props ={props[5]}/>
             <Good img='/good7.jpg' props ={props[6]}/>
           </GoodCarousel>
+          </div><div style={{"gridArea":"b"}}>
           <Header title="Витрина 2" />
           <GoodCarousel>
             <Good img='/good7.jpg' props ={props[0]}/>
@@ -87,9 +99,9 @@ const Home=()=>{
             <Good img='/good3.jpg' props ={props[4]}/>
             <Good img='/good2.jpg' props ={props[5]}/>
             <Good img='/good1.jpg' props ={props[6]}/>
-          </GoodCarousel>
+          </GoodCarousel></div>
           <p className="description">
-            <code>дальше делать лень</code>
+            <code>...</code>
           </p>
         </div>
       </main>

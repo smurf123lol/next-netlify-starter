@@ -3,7 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 export default function GoodCarousel(props){
     const [viewportRef,embla] = useEmblaCarousel({
-        dragFree: true,
+        dragFree: false,
         containScroll: "trimSnaps",
         align: 'center'
     })
